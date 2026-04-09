@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mahima Koujula - Full Stack Developer Portfolio">
+  <meta name="keywords" content="full stack developer, portfolio, web development, HTML, CSS, JavaScript, React, Node.js, SQL, R Programming">
+  <meta name="author" content="Mahima Koujula">
+  <title>Mahima Koujula | Full Stack Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; }
+
+    :root {
+      --bg-color: #fff;
+      --text-color: #333;
+      --header-bg: linear-gradient(120deg, #111, #333);
+      --card-bg: #fff;
+      --card-border: #ddd;
+      --btn-bg: #111;
+      --footer-bg: #111;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #fff;
+      --header-bg: linear-gradient(120deg, #000, #222);
+      --card-bg: #1e1e1e;
+      --card-border: #444;
+      --btn-bg: #333;
+      --footer-bg: #000;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a, nav button {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 { margin-bottom: 20px; }
+
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { margin: 15px 0; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--btn-bg);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .projects .card {
+      border: 1px solid var(--card-border);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      background: var(--card-bg);
+    }
+
+    .projects .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #eee;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .blog .post {
+      border: 1px solid var(--card-border);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      background: var(--card-bg);
+    }
+
+    .blog .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--footer-bg);
+      color: white;
+    }
+
+    @media(max-width:600px){
+      .hero h1 { font-size: 1.8rem; }
+      .blog-posts { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mahima Koujula</h1>
+  <p>Full Stack Developer | Information Technology Student</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Hi, I'm Mahima 👋</h1>
+  <p>Aspiring Full Stack Developer building responsive and real-world web applications.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am currently pursuing INFORMATION TECHNOLOGY IN GVPCEW while actively learning Full Stack Web Development. I am passionate about creating modern, responsive, and user-friendly web applications.</p>
+
+  <h3>Education</h3>
+  <p>Bachelor's degree in Information Technology at GVP College of Engineering for Women (GVPCEW).</p>
+
+  <h3>Experience</h3>
+  <p>As a dedicated student, I have gained hands-on experience through various projects, including web development, data analysis with R, and database management with SQL and PL/SQL. I am currently interning in Full Stack Web Development, where I build real-world applications.</p>
+
+  <h3>Interests</h3>
+  <p>My interests lie in full-stack development, user interface design, problem-solving with code, and exploring new technologies like React, Node.js, and cloud computing.</p>
+
+  <h3>Goals</h3>
+  <p>My primary goal is to become a skilled full-stack developer, contribute to innovative projects, and eventually lead development teams. I aim to build scalable, efficient, and user-centric applications that make a positive impact.</p>
+
+  <h3>Skills</h3>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>SQL</span>
+    <span>R Programming</span>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>Built a responsive personal portfolio website as part of Full Stack Internship Task 1.</p>
+    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+  </div>
+
+  <div class="card">
+    <h3>R Programming Tasks</h3>
+    <p>Implemented data handling, duplicate removal, and file operations using R.</p>
+    <p><strong>Tech:</strong> R</p>
+  </div>
+
+  <div class="card">
+    <h3>DBMS & SQL Projects</h3>
+    <p>Developed PL/SQL programs, triggers, and queries for database management.</p>
+    <p><strong>Tech:</strong> SQL, PL/SQL</p>
+  </div>
+
+  <div class="card">
+    <h3>Full Stack Web Development Internship</h3>
+    <p>Completed various tasks including building portfolio websites, data analysis, and database projects as part of a full stack internship program.</p>
+    <p><strong>Tech:</strong> HTML, CSS, JavaScript, R, SQL</p>
+  </div>
+
+</section>
+
+<section id="blog" class="blog">
+  <h2>Blog</h2>
+  <div class="blog-posts">
+    <div class="post">
+      <h3>My Journey into Full Stack Development</h3>
+      <p>As a student pursuing Information Technology, I embarked on a journey to learn full stack web development. This blog post details my experiences, challenges, and learnings from building my first portfolio website.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="post">
+      <h3>Understanding Responsive Design</h3>
+      <p>Responsive design is crucial in today's web development. Learn how to make websites that look great on all devices using CSS media queries and flexible layouts.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="post">
+      <h3>Getting Started with React</h3>
+      <p>React is a powerful library for building user interfaces. In this post, I share my initial steps into React development and some tips for beginners.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: mahima@example.com</p>
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="from_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Mahima Koujula | Portfolio</p>
+</footer>
+
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    .then(function() {
+      alert('Message sent successfully!');
+    }, function(error) {
+      alert('Failed to send message: ' + JSON.stringify(error));
+    });
+});
+
+document.getElementById('theme-toggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark');
+  this.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+});
+</script>
+
+</body>
+</html>
